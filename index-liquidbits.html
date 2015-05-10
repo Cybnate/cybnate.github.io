@@ -1,0 +1,68 @@
+<h2>Instructions for LiquidBits.net</h2><br>In a nutshell: You run a program that places NBT, EUR, USD and BTC orders on an 
+exchange with a very small spread. The program will send proofs
+ of those orders to a server which in turn pays you interest in the form
+ of NuBits.<br>You can find the instructions to participate <a href="http://cybnate.github.io/index-liquidbits.html">here.</a><br>
+
+<em><br></em><em>Important: Neither the developer of this software, nor the
+liquidity operation on LiquidBits.net is in any way related to the official
+Nu core-team.<br><br></em><hr style="width: 100%; height: 2px;"><h3><span style="font-weight: bold;">Introduction</span></h3>The software runs on Python. This is available on Linux and Mac but not on Windows. You can either install Python yourself (see instruction below) or use the auotmatic installer which comes with the Plung graphical interface. <br><br> 
+
+<h3>Installing Python</h3>
+
+<p>If you are on Linux or Mac OS, then you don't need to install Python because it comes with the operating system. On Windows you can download and install Python from here:<br><a href="https://www.python.org/downloads/release/python-279" class="onebox" target="_blank">https://www.python.org/downloads/release/python-279</a></p>
+
+<h3>Installing the Client</h3>
+
+<ol><li>Download the client software from <a href="https://github.com/Cybnate/nu-pool/releases">here.</a>
+</li><li>Extract the archive and switch to the folder extracted</li><li>If you are on Windows then go to the <code>windows</code> folder, otherwise go to the <code>unix</code> folder</li></ol>
+
+<p>Note: The software is completely platform independent. The only purpose of different folders for Windows and Unix based systems is to provide specialized starting scripts. You can also just call the script within the <code>python</code> folder if you prefer.</p><h3><span style="font-weight: bold;">Starting the Client</span></h3>
+
+
+<p>With a fully configured <code>pool.conf</code> you can start the client by making a double click on the file <code>client</code>. On Windows this file might be shown as <code>client.bat</code> and it might be the case that smart screen won't allow the program to start, unless you click "further information" and then on "run anyway".</p>
+
+
+<p>Finally a terminal should open showing an output like this:</p>
+
+<blockquote><p>2015/04/09-02:18:23 INFO: bittrex - balance: 0.01775243 rate: 0.25%
+ppm: 0.00053809 efficiency: 100.00% rejects: 0 missings: 0 - btc - bid:
+294.0214 x 0.25% - ask: 15.9180 x 0.25% - xxxxxxxxxxxxxxxxxxxxxxx</p></blockquote>
+
+
+<ul><li>
+<code>balance</code>:<br>The total amount of unpaid NBT.</li><li>
+<code>rate</code>:<br>Your effective interest rate, which corresponds to the expected daily interest rate you will get for the orders currently placed.</li><li>
+<code>ppm</code>:<br>Payout per minute. The amount of NBT that were added to your balance over the last minute.</li><li>
+<code>efficiency/rejects/missings</code>:<br>If the connection to the server or to the exchange is bad, then the server will not be able to validate your orders and therefore cannot compensate your liquidity. If a request never reached the server, you will see it by a non-zero number of <code>missings</code>. If your requests reach the server, but cannot be validated at the exchange, then you will see a non-zero number of <code>rejects</code>. The efficiency corresponds to the fraction of all requests which are neither a <code>missing</code> nor a <code>reject</code>. Your client will automatically try to fix efficiency issues, so if you are experiencing low efficiency values then please give the client up to 30 minutes to optimize its behavior.</li><li>
+
+<code>bid/ask</code>:<br>The total sum of your orders as recognized and compensated by the server on the corresponding side of the market.</li></ul><h3>Instruction for installing and using LiquidBits.net</h3><h4 style="color: rgb(204, 153, 51);"><span style="font-weight: bold;">Step 0</span> <span style="font-weight: bold;">Installing Python</span></h4><h4 style="color: rgb(204, 153, 51); font-weight: normal;"><span style="color: black;">If you are on Linux or Mac OS, then you don't need to install Python
+because it comes with the operating system, goto to step 1</span>.<br></h4><h4 style="color: rgb(204, 153, 51); font-weight: normal;"><span style="color: black;"><span style="text-decoration: underline;">Option 1</span>: On Windows you can download
+and install Python from <a href="https://www.python.org/downloads/release/python-279" class="onebox" target="_blank">here<span style="text-decoration: underline;">.</span></a></span><a href="https://www.python.org/downloads/release/python-279" class="onebox" target="_blank"><br></a></h4><h4 style="color: rgb(204, 153, 51); font-weight: normal;"><span style="color: black;"><span style="text-decoration: underline;">Option 2</span>: When you don't have Python installed on Windows or you don't know, best to install Plunge as it comes with a nice auto-installer for Python. Check it out here: <a href="https://discuss.nubits.com/t/tllp-plunge-gui-beta/2006">Plunge discussion</a> or download <a href="https://github.com/inuitwallet/plunge/releases/download/0.1/plunge.installer.exe">here.</a><br>Unfortunately Plunge is not working well for LiquidBits.net at the time of writing, but I have been told that this will be the case soon (Thanks @woolly_sammoth). So for now you don't need to start it after installation.
+As soon as Plunge works for Liquidbits.net you don't have to step through all the steps below, except step 1 and 2.
+
+When you already have an account on an exchange and created API keys before go to step 3</span></h4><h4 style="color: rgb(204, 153, 51);">
+
+
+
+</h4><h4 style="color: rgb(204, 153, 51);">Step 1<br><span style="color: black; font-weight: normal;">You can join when you have or open an account on www.CCEDK.com or www.Bitcoin.co.id. For you own safety please enable two-factor authentication especially when you have more than just a few test NBTs on the exchange. Add some NBT, BTC or transfer some EUR or USD to your account depending on which pairs and exchange you like to provide liquidity. You can do some basic testing without any balance though.</span>
+
+</h4><h4 style="color: rgb(204, 153, 51);">Step 2<br><span style="color: black; font-weight: normal;">Make sure you create so-called API keys. They always come in pairs. There is a public key and a secret key.
+On CCEDK you can find that under 'My account' (click on your login name on top right corner) and choose API keys
+On Bitcoin.co.id you can find it under 'Account' on the left and then goto 'Android App + Trade API'</span>
+
+</h4><h4 style="color: rgb(204, 153, 51);">Step 3</h4>Download the zip (Windows) or tarball (Linux) here. Unpack the zip on a suitable location e.g. c:/program files/nu-pool for Windows, you will need to create that first and move the ZIP into that folder.<br>
+For Linux, it is best to create a map under /home/<your username="">&lt;your username&gt;/nu-pool.<br>Before you start make sure you have read and understood the disclaimer in the readme.md from the ZIP you just unpacked.<br>
+
+
+You can also read it <a href="https://github.com/Cybnate/nu-pool/blob/master/README.md">here.</a><br><br></your><hr style="width: 100%; height: 2px;"><span style="color: rgb(204, 153, 51); font-weight: bold;">Step 4</span><p style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 153);">For Windows:</span><br></p><ul><li><span style="color: black;">Open explorer and go to the location where you unpacked the ZIP</span></li><li>Open the 'nu-pool-x.yyLB' folder (where x.yy is the version number e.g. 1.00)</li><li>Open de 'windows' folder</li><li>Edit the .bat file (right click,edit) with the exchange you like to start with e.g. pool-ccedk-usd.conf</li></ul><p style="color: rgb(0, 0, 0);">
+
+</p><li><p>When open look for the header REQUIRED PARAMETERS,</p>
+
+
+
+
+<p>1) replace the 'xxxxxx' under NuBits pay-out addres with an address from your wallet. On this address you will receive any pay-outs<br>2) replace the 'xxxxx' under Api-key from the exchange with the first key you have created under step 2<br>3) replace the 'xxxxx' under Api-secret from the exchange with the second key you have created under step 2<br>&nbsp;&nbsp;&nbsp; Make sure you never share the second secret key with anyone else. It is like your password.<br>4) Optional Edit the minimal interest rate you want under optional parameters (default=0 is pool maximum). You will need to enter it for the bid and sell side separated with a comma like this: 0.25,0.1<br>5) Save the file with File-Save and then File-Exit.</p><span style="color: rgb(102, 0, 0);">
+
+
+For Linux</span><br>
+</li>

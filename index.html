@@ -1,90 +1,42 @@
-Hello World
-Link to Android
-Link to datafeeds
-**marking up**
-<A HREF="index.html">link</A>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index.html</title></head><body>
+<h1>Cybnate's repository links and information<br></h1>
+<a href="https://github.com/Cybnate/Nubits-Android-wallet">
 
- <h3>Chapter 3: Client Configuration</h3>
-
-<p><em>Important: Neither the developer of this software, nor the liquidity operation on NuPool.net is in any way related to the official Nu core-team.</em></p>
-
-<p>This chapter describes how to install and configure the console based client.</p>
-
-<p>After completing the steps described in <a href="//discuss.nubits.com/t/nupool-getting-started-chapter-2-creating-api-keys-on-bittrex-com/1904">Chapter 2</a> you will have two values from Bittrex we will need now: <strong>Key</strong> and <strong>Secret</strong>. Please don't forget to set the permissions as shown below:</p>
-
-<p><div class="lightbox-wrapper"><a data-download-href="//discuss.nubits.com/uploads/default/257394e13baab24a2296e68df0a321a10ccf57ee" href="//discuss.nubits.com/uploads/default/674/6e03d7a8efb5c784.png" class="lightbox" title="permission.png"><img src="//discuss.nubits.com/uploads/default/_optimized/762/56b/ab2afc60aa_690x156.png" width="690" height="156"><div class="meta">
-<span class="filename">permission.png</span><span class="informations">769x174 8.94 KB</span><span class="expand"></span>
-</div></a></div> </p>
-
-<h4>Installing Python</h4>
-
-<p>If you are on Linux or Mac OS, then you don't need to install Python because it comes with the operating system. On Windows you can download and install Python from here:<br><a href="https://www.python.org/downloads/release/python-279" class="onebox" target="_blank">https://www.python.org/downloads/release/python-279</a></p>
-
-<h3>Installing the Client</h3>
-
-<ol>
-<li>Download the client software from here: <a href="https://github.com/creon-nu/nu-pool/releases/latest">https://github.com/creon-nu/nu-pool/releases/latest</a>
-</li>
-<li>Extract the archive and switch to the folder extracted</li>
-<li>If you are on Windows then go to the <code>windows</code> folder, otherwise go to the <code>unix</code> folder</li>
-</ol>
-
-<p>Note: The software is completely platform independent. The only purpose of different folders for Windows and Unix based systems is to provide specialized starting scripts. You can also just call the script within the <code>python</code> folder if you prefer.</p>
-
-<h4>Configuring the Client</h4>
-
-<p>Open the file <code>pool.conf</code> in a text editor of your choice (on Windows please use Notepad). On the top of the file you will see three parameters:</p>
-
-<pre><code># NuBits payout address
-address = XXX
-# API key from the exchange
-apikey = XXX
-# API secret from the exchange
-apisecret = XXX</code></pre>
-
-<p>Enter your <strong>Key</strong> obtained in the previous chapter as value for <code>apikey</code> and your <strong>Secret</strong> as value for <code>apisecret</code>.<br>The value for <code>address</code> must be a valid NuBits address. No other payout addresses are possible.</p>
-
-<p><strong>Important:</strong> For security reasons it is impossible to change the payout address of a registered key. If you want to change your payout address, please create a new API key and secret pair and use it together with your new payout address.</p>
-
-<h4>Optional Parameters</h4>
-
-<ul>
-<li><p><code>interest</code>: The minimal interest rate at which you want to get payouts in percent (0.25% = 0.25). Set this value to 0 to only allow for the pool's maximum (this will lead to minimal payout). You can specify two interest rates for the bid and ask side by separating them with a comma, e.g. <code>0.25,0.1</code></p></li>
-<li><p><code>ordermatch</code>: This tells the trading bot to place orders even if they would match with an existing order. Set this value only to True if you know what you are doing. The default value is False.</p></li>
-<li><p><code>trading</code>: The trading bot used to place and reset the orders. Possible values are <code>pybot</code>, which is the internal bot, <code>nubot</code>, which is the official trading bot of the Nu dev team, or <code>none</code> to disable the trading bot completely. Note that your client will work 100% correctly if you just place your orders manually in the correct price range. The <code>nubot</code> is furthermore not supported yet but it should be the case soon.</p></li>
-</ul>
-
-<p><em>Please do not change the remaining parameters (<code>server</code>, <code>unit</code>, <code>exchange</code>). If you change any of these parameters, then you won't be able to connect to the pool anymore</em></p>
-
-<h4>Starting the Client</h4>
-
-<p>With a fully configured <code>pool.conf</code> you can start the client by making a double click on the file <code>client</code>. On Windows this file might be shown as <code>client.bat</code> and it might be the case that smart screen won't allow the program to start, unless you click "further information" and then on "run anyway".</p>
-
-<p>Finally a terminal should open showing an output like this:</p>
-
-<blockquote><p>2015/04/09-02:18:23 INFO: bittrex - balance: 0.01775243 rate: 0.25% ppm: 0.00053809 efficiency: 100.00% rejects: 0 missings: 0 - btc - bid: 294.0214 x 0.25% - ask: 15.9180 x 0.25% - xxxxxxxxxxxxxxxxxxxxxxx</p></blockquote>
-
-<ul>
-<li>
-<code>balance</code>:<br>The total amount of unpaid NBT.</li>
-<li>
-<code>rate</code>:<br>Your effective interest rate, which corresponds to the expected daily interest rate you will get for the orders currently placed.</li>
-<li>
-<code>ppm</code>:<br>Payout per minute. The amount of NBT that were added to your balance over the last minute.</li>
-<li>
-<code>efficiency/rejects/missings</code>:<br>If the connection to the server or to the exchange is bad, then the server will not be able to validate your orders and therefore cannot compensate your liquidity. If a request never reached the server, you will see it by a non-zero number of <code>missings</code>. If your requests reach the server, but cannot be validated at the exchange, then you will see a non-zero number of <code>rejects</code>. The efficiency corresponds to the fraction of all requests which are neither a <code>missing</code> nor a <code>reject</code>. Your client will automatically try to fix efficiency issues, so if you are experiencing low efficiency values then please give the client up to 30 minutes to optimize its behavior.</li>
-<li>
-<code>bid/ask</code>:<br>The total sum of your orders as recognized and compensated by the server on the corresponding side of the market.</li>
-</ul>
-
-<p>The client will always ensure that the effective interest does not stay below the minimal interest rate specified. If the required interest rate cannot be obtained, then the bot will remove orders from the market. If you are not planning to decrease your minimal interest rate, then you should consider removing these funds from the exchange.</p>
-
-<p>Please allow the client up to 5 minutes to output data.</p>
-
-<p>Remark for former beta users: The old system with the <code>users.dat</code> can still be used. You just have to pass the users.dat as first parameter to <code>client.py</code> and use <code>eu.nupool.net</code> as second parameter. Alternatively the data can also be read from the standard input by providing - as input file. You can even apply the multi-line format in the pool.conf and it will be read correctly.</p>
-
-<h4>Stopping the Client</h4>
-
-<p>You can stop the client by hitting CTRL+C. It will not terminate immediately! This is because it will need to remove all orders from your exchange which can take several seconds. In your own interest, please allow the client to shutdown correctly.</p>
-    </div>
- 
+Link to Android repository</a><br>
+The official Android client for NuBits. Download the App from Google Play<br>
+More information and discussion on <a href="https://discuss.nubits.com/t/passed-final-proposal-for-continuing-developments-on-android-wallet-v2-0-released/1505">the NuBits forum.</a><br>
+<br>
+<a href="https://github.com/Cybnate/NuBitsj">Link to NuBitsj repository</a><br>
+The NuBitsj library is a Java implementation of the Nubits protocol, 
+which allows it to maintain a wallet and send/receive transactions 
+without needing to do full blockchain validation. It comes with full 
+documentation and some example apps showing how to use it. NuBitsj uses a
+ central server to download block hashes for verification.<br>
+<br>
+<a href="https://github.com/Cybnate/NuNet-datafeed">Link to Datafeeds repository
+</a><br>
+Struggle to keep up with the NuBits forum, going on holiday or just bought you new NuShares?<br>
+My datafeed will help you out. As a NuShareholder I will vote&nbsp; for
+the motions and custoidal grant which I think are in the Shareholder's
+best interest.<br>
+Please remember that when you don't vote, you basically vote against any motion or custodial grant!<br>
+More information and instructions on how to use&nbsp;my NuBits datafeed in your client can be found <a href="https://discuss.nubits.com/t/cybnates-datafeed-beta/1310">here.</a><br>
+<br>
+<a href="https://github.com/Cybnate/nu-pool">Link to LiquidBits.net repository</a><br>
+<img>In a nutshell: You run a program that places NBT, EUR, USD and BTC orders on an 
+exchange with a very small spread. The program will send proofs
+ of those orders to a server which in turn pays you interest in the form
+ of NuBits.<br>
+You can find the instructions to participate <a href="http://cybnate.github.io/index-liquidbits.html">here.</a><br>
+You can find the awesome Plunge repository <a href="https://github.com/inuitwallet/plunge">here </a>which provides a nice graphical interface.<br>
+<br>
+<a href="https://github.com/Cybnate/NuBits-Abe-explorer">Link to Abe NuBits Explorer repository</a><br>
+This software reads the NuBits blockfile, transforms and loads the
+data into a database, and presents a web interface similar to Bitcoin
+Block Explorer.<br>
+A working installation showing the NuBits blockchain can be found <a href="https://svr1.nubitsexplorer.nu/chain/Nubits">here.</a><br>
+<br>
+<hr style="width: 100%; height: 2px;">Any questions, issues? You can find me regularly on the <a href="http://discuss.nubits.com/">discuss.nubits.com</a> forum and on the <a href="peercointalk.org">peercointalk.org</a> forum. My alias is Cybnate.<br>
+Or send me a Bitmessage on: BM-NB6Fs5U3Rvi6WEnCZ6F2WehUBjkxD7bz<br>
+<hr style="width: 100%; height: 2px;"></body></html>
