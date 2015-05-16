@@ -37,16 +37,8 @@ When you have used Nu-Pool or LiquidBits before, you can go directly to step 4.<
 because it comes with the operating system, goto to step 1</span>.<br></h4>
 
 
-<h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;"><span style="text-decoration: underline;">Option 1</span>:
-When you don't have Python installed on Windows or you don't know, best
-to install Plunge as it comes with a nice auto-installer for Python.
-Check it out here: <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/tllp-plunge-gui-beta/2006">Plunge discussion</a> or download <a style="color: rgb(204, 153, 51);" href="https://github.com/inuitwallet/plunge/releases/download/0.1/plunge.installer.exe">here.</a><br><span style="font-style: italic;">Unfortunately
-Plunge is not working well for LiquidBits.net at the time of writing,
-but I have been told that this will be the case soon (Thanks
-@woolly_sammoth). So for now you don't need to start it after
-installation.
-As soon as Plunge works for Liquidbits.net you don't have to step
-through all the steps below, except step 1 and 2. You can then add your setting in a graphical interface.<br></span></span></h4>
+<h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;"><span style="text-decoration: underline;">Option 1 (recommended)</span>: Install Plunge as it comes with a nice auto-installer for Python.
+Check it out here: <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/tllp-plunge-gui-beta/2006">Plunge discussion</a> or download <a style="color: rgb(204, 153, 51);" href="https://github.com/inuitwallet/plunge/releases/download/0.1/plunge.installer.exe">here.</a><br><span style="font-style: italic;">When you install Plunge you can skip all steps below, except step 1 and 2. You can then add your settings in a graphical interface.<br></span></span></h4>
 <h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;"><span style="text-decoration: underline;">Option 2</span>: On Windows you can download
 and install Python from <a style="color: rgb(204, 153, 51);" href="https://www.python.org/downloads/release/python-279">here</a> yourself.<br></span></h4>
 <hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);">
@@ -71,7 +63,7 @@ liquidity. You can do some basic testing without any balance though.</span></h4>
 
 <h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 2 Creating API keys<br><span style="color: black; font-weight: normal;">You will need to create so-called API keys. They always come in pairs. There is a public key and a secret or private key.
 On CCEDK you can find that under 'My account' (click on your login name on top right corner) and choose API keys
-On Bitcoin.co.id you can find it under 'Account' on the left and then goto 'Android App + Trade API'</span></h4><hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 3 Download the software<br></h4><a style="color: rgb(204, 153, 51);" href="https://github.com/Cybnate/nu-pool/releases">Download the zip (Windows) or tarball (Linux) here</a><span style="color: rgb(204, 153, 51);">.</span> Unpack the zip on a
+On Bitcoin.co.id you can find it under 'Account' on the left and then goto 'Android App + Trade API'</span></h4><hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 3 Download the software together with Plunge<br><span style="color: black; font-weight: normal;">When you haven't installed Plunge in step 0 go to step 3b.<br>Plunge users start Plunge (shortcut on the desktop) and goto Settings<br>A whole list of settings appear:<br>Enter the following:<br>after Server IP/Hostname: <span style="font-weight: bold;">nbt.liquidbits.net</span><br>after Server Port: <span style="font-weight: bold;">80<br></span>further down after Monitor click on the switch to turn it <span style="font-weight: bold;">ON<br></span>You are now able to monitor the pool.<br><br>If you like to add your funds to the pool click on the exchanges where your funds reside under Settings<br>1) Add the API keys you have created on the exchange<br>2) Add the NBT adress where you like to receive the payouts (this can also be your Android wallet address)<br>3) Add the pair you like to submit liquidit to e.g. select USD for the NBT/USD pair<br>4) Click on 'set rates' to set a minimum interest rate with the sliders. <br>5) Set the Bot to <span style="font-weight: bold;">PyBot<br></span>6) Click Ok and your data will be saved. <br>&nbsp;&nbsp;&nbsp;&nbsp; When all went well you will see a '1' after the exchange you have chosen.<br>7) Now click the switch after 'Monitor' to turn it <span style="font-weight: bold;">OFF</span><br>8) Click 'Close' in the top right corner<br>9) At the bottom of the home screen you will now see a 'Start' button. Click Start to submit you liquidity to the pool. <br>&nbsp;&nbsp;&nbsp; When this went well you will see :The client is running' and some messages appearing underneath. You will also see your<br>&nbsp;&nbsp;&nbsp; liquidity provided under Personal stats.<br><br>You can skip the next steps. There is some useful other information about the pool further down after these steps.<br></span></h4><hr style="width: 100%; height: 2px;"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);"><span style="color: black; font-weight: normal;"></span>Step 3b Download the software and manuaaly run the client(s)<br></h4><a style="color: rgb(204, 153, 51);" href="https://github.com/Cybnate/nu-pool/releases">Download the zip (Windows) or tarball (Linux) here</a><span style="color: rgb(204, 153, 51);">.</span> Unpack the zip on a
 suitable location e.g. c:/program files/nu-pool.<br>For Windows, you will
 need to create that first and move the ZIP into that folder.<br>
 
@@ -176,21 +168,14 @@ dos box and press CTRL-C. The bot terminates and cancels your orders.
 When your computer is turned off without cancelling your order, your
 order will still be on the exchange! Restarting the bot and properly
 cancelling them works or otherwise just log into the exchange to
-manually cancel the orders.</span><br style="color: black;"><br style="color: black;"></span><div style="text-align: center;"><span style="color: black;"><span style="font-weight: bold;">Mac install and manuals</span></span><br><span style="color: black;"></span></div><span style="color: black;">This
-is just a quick guide, if it dazzles you or you are using Mac, you
-might start with Nu-pool first as they have created an excellent and
-detailed manual here and it works with Plunge. The software basically
-works the same. Liquidbits.net is just a different server/pool and the
+manually cancel the orders.</span><br style="color: black;"><br style="color: black;"></span><div style="text-align: center;"><span style="color: black;"><span style="font-weight: bold;">Mac install and manuals</span></span><br><span style="color: black;"></span></div><span style="color: black;">Best to use the Plunge software. You can run without it if you want to. Liquidbits.net is just a different server/pool and the
 only things which are different are the .conf files. If you know what
-you are doing, it can be made to work on a Mac.</span><br style="color: black;"><span style="color: rgb(102, 0, 0);"><br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0);"><span style="color: black; font-weight: bold;">Running on nu-pool, liquidbits.net and other pools at the same time</span></span><br style="color: black;"><span style="color: rgb(102, 0, 0);"></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;">You
-can run two or more .bat files (e.g. for Bittrex on nu-pool and ccedk
+you are doing, it can be made to work on a Mac command line with bash files.</span><br style="color: black;"><span style="color: rgb(102, 0, 0);"><br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0);"><span style="color: black; font-weight: bold;">Running on nu-pool, liquidbits.net and other pools at the same time</span></span><br style="color: black;"><span style="color: rgb(102, 0, 0);"></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;">You
+can run two or more .bat files and Plunge (e.g. for Bittrex on nu-pool and ccedk
 on liquidbitsnet) at the same time as long as they are on a different
 exchange. For running two bots on the same exchange at the same time
 but on different pairs (e.g. USD/NBT and EUR/NBT), you will need two
-accounts on the exchange. </span><br style="color: black;">
-
-
-<br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0); font-weight: bold;"><span style="color: black;">Settings for this custodial grant (10-May-2015)</span>
+accounts on the exchange. <br><br></span><br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0); font-weight: bold;"><span style="color: black;">Settings for this custodial grant (10-May-2015)</span>
 
 
 <br style="color: black;"></span><span style="color: rgb(102, 0, 0);"></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br>The settings for this run are set on the server as follows:</span>
