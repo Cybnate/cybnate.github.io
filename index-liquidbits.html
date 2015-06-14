@@ -1,4 +1,5 @@
-<style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><style>
   html, body {
     height: 100%;
   }
@@ -15,9 +16,7 @@
   #myTable {
     margin: 0 auto;
   }
-</style>
-
-<table id="myTable" style="text-align: left; width: 922px; height: 195px;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: top;"><img style="width: 119px; height: 119px;" alt="Logo" src="https://cloud.githubusercontent.com/assets/6694926/7552656/94568970-f715-11e4-98e3-73658b2d85b4.jpg"></td><td style="vertical-align: top; background-color: rgb(255, 204, 0);"><h2 style="background-color: rgb(255, 204, 0); text-align: center;"><br>Instructions for LiquidBits.net</h2><br><br>
+</style></head><body><table id="myTable" style="text-align: left; width: 922px; height: 195px;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: top;"><img style="width: 119px; height: 119px;" alt="Logo" src="https://cloud.githubusercontent.com/assets/6694926/7552656/94568970-f715-11e4-98e3-73658b2d85b4.jpg"></td><td style="vertical-align: top; background-color: rgb(255, 204, 0);"><h2 style="background-color: rgb(255, 204, 0); text-align: center;"><br>Instructions for LiquidBits.net</h2><br><br>
 </td><td style="vertical-align: top;"><img style="width: 118px; height: 118px;" alt="Logo" src="https://cloud.githubusercontent.com/assets/6694926/7552656/94568970-f715-11e4-98e3-73658b2d85b4.jpg"></td></tr><tr><td style="vertical-align: top; background-color: rgb(254, 255, 244);"><small><br><br><br><br><br><br><br></small><div style="text-align: center;"><small><small>Ended up on the </small></small><br><small><small>wrong page? <a style="color: rgb(153, 102, 51);" href="http://cybnate.github.io/">Go back</a></small></small></div></td><td style="vertical-align: top; background-color: white;">In a nutshell: You run a program that places NBT, EUR, USD and BTC orders on an 
 exchange with a very small spread. The program will send proofs
  of those orders to a server which in turn pays you interest in the form
@@ -28,17 +27,58 @@ Nu core-team. The funds for the payout has been provided by the NuShareholders t
 <td style="vertical-align: top; background-color: rgb(254, 255, 244);"><br><br><br><br><br><br><a style="color: rgb(204, 153, 51);" href="http://discuss.nubits.com"><small><small>Go to the Nubits forum</small></small></a><br></td></tr></tbody>
 </table><em></em>
 
-<table id="myTable" style="text-align: left; width: 924px; height: 32px;" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: top; background-color: rgb(254, 255, 244);"><hr style="width: 100%; height: 2px;"><h3 style="background-color: rgb(254, 255, 244); text-align: center;"><br><span style="font-weight: bold;"></span></h3><h3 style="background-color: rgb(254, 255, 244); text-align: center;"><span style="font-weight: bold;">Introduction</span></h3>The software runs on Python. This is already installed on Linux and Mac, but not
+<table style="text-align: left; width: 924px; height: 32px;" id="myTable" border="0" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: top;">
+      <table style="text-align: left; width: 122px; height: 163px;" border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top; background-color: white;">&nbsp;&nbsp;&nbsp; <a href="#Introduction">Introduction</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Instruction_for_installing_and_using">Instructions</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">&nbsp;&nbsp; <a href="#Settings_for_this_custodial_grant">Server settings</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp; <a href="#Checking_server_status">Server status</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#FAQ">FAQs</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">&nbsp; <a href="discuss.nubits.com" target="_blank">NuBits Forum</a><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+      <br>
+      <br>
+      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+      </td>
+<td style="vertical-align: top; background-color: rgb(254, 255, 244);"><hr style="width: 100%; height: 2px;"><h3 style="background-color: rgb(254, 255, 244); text-align: center;"><br><span style="font-weight: bold;"></span></h3><h3 style="background-color: rgb(254, 255, 244); text-align: center;"><span style="font-weight: bold;"><a name="Introduction"></a>Introduction</span></h3>The software runs on Python. This is already installed on Linux and Mac, but not
 on Windows. You can either install Python yourself (see instruction
 below) or use the automatic installer which comes with the Plunge
 graphical interface. <br>
 
-When you have used Nu-Pool or LiquidBits before, you can go directly to step 4.<br>When you have already created an exchange account and API key for other bots you can skip 1 and 2.<br>There are no fees to join, no pool registration and there is no minimum amount to join. You can join with just a few NBTs, USDs, or Euros or the equivalent in Bitcoin. Please check out the trading fees on the exchanges.<br><br>Support is provided on the <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/passed-liquidbits-net-trustless-liquidity-provision-on-usd-eur-and-btc-pairs/2062/16">Nubits forum</a>, leave me a PM or send me a Bitmessage: BM-NB6Fs5U3Rvi6WEnCZ6F2WehUBjkxD7bz<br>See also the <a style="color: rgb(204, 153, 51);" href="#FAQ">FAQs</a> below.<br><br><h3 style="background-color: rgb(254, 255, 244); text-align: center;">Instruction for installing and using LiquidBits.net</h3><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);"><span style="font-weight: bold;">Step 0</span> <span style="font-weight: bold;">Installing Python</span></h4><h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;">If you are on Linux or Mac OS, then you don't need to install Python
+When you have used Nu-Pool or LiquidBits before, you can go directly to step 4.<br>When you have already created an exchange account and API key for other bots you can skip 1 and 2.<br>There
+are no fees to join, no pool registration and there is no minimum
+amount to join. You can join with just a few NBTs, USDs, or Euros or
+the equivalent in Bitcoin. Please check out the trading fees on the
+exchanges.<br><br>Support is provided on the <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/passed-liquidbits-net-trustless-liquidity-provision-on-usd-eur-and-btc-pairs/2062/16">Nubits forum</a>, leave me a PM or send me a Bitmessage: BM-NB6Fs5U3Rvi6WEnCZ6F2WehUBjkxD7bz<br>See also the <a style="color: rgb(204, 153, 51);" href="#FAQ">FAQs</a> below.<br><br><h3 style="background-color: rgb(254, 255, 244); text-align: center;"><a name="Instruction_for_installing_and_using"></a>Instruction for installing and using LiquidBits.net</h3><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);"><span style="font-weight: bold;">Step 0</span> <span style="font-weight: bold;">Installing Python</span></h4><h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;">If you are on Linux or Mac OS, then you don't need to install Python
 because it comes with the operating system, goto to step 1</span>.<br></h4>
 
 
 <h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;"><span style="text-decoration: underline;">Option 1 (recommended)</span>: Install Plunge as it comes with a nice auto-installer for Python.
-Check it out here: <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/tllp-plunge-gui-beta/2006">Plunge discussion</a> or download <a style="color: rgb(204, 153, 51);" href="https://github.com/inuitwallet/plunge/releases/download/0.1/plunge.installer.exe">here.</a><br><span style="font-style: italic;">When you install Plunge you can skip all steps below, except step 1,2 and 3. You can then add your settings in a graphical interface.<br></span></span></h4>
+Check it out here: <a style="color: rgb(204, 153, 51);" href="https://discuss.nubits.com/t/tllp-plunge-gui-beta/2006">Plunge discussion</a> or download <a style="color: rgb(204, 153, 51);" href="https://github.com/inuitwallet/plunge/releases/download/0.1/plunge.installer.exe">here.</a><br><span style="font-style: italic;">When
+you install Plunge you can skip all steps below, except step 1,2 and 3.
+You can then add your settings in a graphical interface.<br></span></span></h4>
 <h4 style="color: rgb(204, 153, 51); font-weight: normal; background-color: rgb(254, 255, 244);"><span style="color: black;"><span style="text-decoration: underline;">Option 2</span>: On Windows you can download
 and install Python from <a style="color: rgb(204, 153, 51);" href="https://www.python.org/downloads/release/python-279">here</a> yourself.<br></span></h4>
 <hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);">
@@ -63,7 +103,9 @@ liquidity. You can do some basic testing without any balance though.</span></h4>
 
 <h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 2 Creating API keys<br><span style="color: black; font-weight: normal;">You will need to create so-called API keys. They always come in pairs. There is a public key and a secret or private key.
 On CCEDK you can find that under 'My account' (click on your login name on top right corner) and choose API keys
-On Bitcoin.co.id you can find it under 'Account' on the left and then goto 'Android App + Trade API'</span></h4><hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 3 Download the software together with Plunge<br><span style="color: black; font-weight: normal;">When you haven't installed Plunge in step 0 go to step 3b.<br>Plunge users start Plunge (shortcut on the desktop) and goto Settings<br>A whole list of settings appear:<br>Enter the following:<br>after Server IP/Hostname: <span style="font-weight: bold;">nbt.liquidbits.net</span><br>after Server Port: <span style="font-weight: bold;">80<br></span>further down after Monitor click on the switch to turn it <span style="font-weight: bold;">ON<br></span>You are now able to monitor the pool.<br><br>If you like to add your funds to the pool click on the exchanges where your funds reside under Settings<br>1) Add the API keys you have created on the exchange<br>2) Add the NBT adress where you like to receive the payouts (this can also be your Android wallet address)<br>3) Add the pair you like to submit liquidit to e.g. select USD for the NBT/USD pair<br>4) Click on 'set rates' to set a minimum interest rate with the sliders. <br>5) Set the Bot to <span style="font-weight: bold;">PyBot<br></span>6) Click Ok and your data will be saved. <br>&nbsp;&nbsp;&nbsp;&nbsp; When all went well you will see a '1' after the exchange you have chosen.<br>7) Now click the switch after 'Monitor' to turn it <span style="font-weight: bold;">OFF</span><br>8) Click 'Close' in the top right corner<br>9) At the bottom of the home screen you will now see a 'Start' button. Click Start to submit you liquidity to the pool. <br>&nbsp;&nbsp;&nbsp; When this went well you will see :The client is running' and some messages appearing underneath. You will also see your<br>&nbsp;&nbsp;&nbsp; liquidity provided under Personal stats.<br><br>You can skip the next steps. There is some useful other information about the pool further down after these steps.<br></span></h4><hr style="width: 100%; height: 2px;"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);"><span style="color: black; font-weight: normal;"></span>Step 3b Download the software and manualy run the client(s)<br></h4><a style="color: rgb(204, 153, 51);" href="https://github.com/Cybnate/nu-pool/releases">Download the zip (Windows) or tarball (Linux) here</a><span style="color: rgb(204, 153, 51);">.</span> Unpack the zip on a
+On Bitcoin.co.id you can find it under 'Account' on the left and then goto 'Android App + Trade API'</span></h4><hr style="width: 100%; height: 2px; background-color: rgb(254, 255, 244);"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);">Step 3 Download the software together with Plunge<br><span style="color: black; font-weight: normal;">When you haven't installed Plunge in step 0 go to step 3b.<br>Plunge users start Plunge (shortcut on the desktop) and goto Settings<br>A whole list of settings appear:<br>Enter the following:<br>after Server IP/Hostname: <span style="font-weight: bold;">nbt.liquidbits.net</span><br>after Server Port: <span style="font-weight: bold;">80<br></span>further down after Monitor click on the switch to turn it <span style="font-weight: bold;">ON<br></span>You are now able to monitor the pool.<br><br>If you like to add your funds to the pool click on the exchanges where your funds reside under Settings<br>1) Add the API keys you have created on the exchange<br>2) Add the NBT adress where you like to receive the payouts (this can also be your Android wallet address)<br>3) Add the pair you like to submit liquidit to e.g. select USD for the NBT/USD pair<br>4) Click on 'set rates' to set a minimum interest rate with the sliders. <br>5) Set the Bot to <span style="font-weight: bold;">PyBot<br></span>6) Click Ok and your data will be saved. <br>&nbsp;&nbsp;&nbsp;&nbsp; When all went well you will see a '1' after the exchange you have chosen.<br>7) Now click the switch after 'Monitor' to turn it <span style="font-weight: bold;">OFF</span><br>8) Click 'Close' in the top right corner<br>9) At the bottom of the home screen you will now see a 'Start' button. Click Start to submit you liquidity to the pool. <br>&nbsp;&nbsp;&nbsp;
+When this went well you will see :The client is running' and some
+messages appearing underneath. You will also see your<br>&nbsp;&nbsp;&nbsp; liquidity provided under Personal stats.<br><br>You can skip the next steps. There is some useful other information about the pool further down after these steps.<br></span></h4><hr style="width: 100%; height: 2px;"><h4 style="color: rgb(204, 153, 51); background-color: rgb(254, 255, 244);"><span style="color: black; font-weight: normal;"></span>Step 3b Download the software and manualy run the client(s)<br></h4><a style="color: rgb(204, 153, 51);" href="https://github.com/Cybnate/nu-pool/releases">Download the zip (Windows) or tarball (Linux) here</a><span style="color: rgb(204, 153, 51);">.</span> Unpack the zip on a
 suitable location e.g. c:/program files/nu-pool.<br>For Windows, you will
 need to create that first and move the ZIP into that folder.<br>
 
@@ -106,7 +148,9 @@ within the </span><code style="font-style: italic;">python</code><span style="fo
 <p style="background-color: rgb(254, 255, 244);">1) replace the 'xxxxxx' under NuBits pay-out addres with an address
 from your wallet. On this address you will receive any pay-outs<br>2) replace the 'xxxxx' under Api-key from the exchange with the first key you have created under step 2<br>3) replace the 'xxxxx' under Api-secret from the exchange with the second key you have created under step 2<br>&nbsp;&nbsp;&nbsp; <small><span style="font-style: italic;">Make sure you never share the second secret key with anyone else. It is like your password.</span></small><br><span style="text-decoration: underline;">Optional</span> <br>4) Edit the minimal interest rate you want under optional
 parameters (default=0 is pool maximum). You will need to enter it for
-the bid and sell side separated with a comma like this: <span style="font-family: monospace;">0.25,0.1</span> <br><small><span style="font-style: italic;">(0.25 = 0.25%/day for sell side, 0.1 = 0.10%/day for buy side. When the rates fall below that your order will no longer be part of the pool)</span></small><br>5) Save the file with File-Save and then File-Exit.</p><span style="color: rgb(102, 0, 0);">
+the bid and sell side separated with a comma like this: <span style="font-family: monospace;">0.25,0.1</span> <br><small><span style="font-style: italic;">(0.25
+= 0.25%/day for sell side, 0.1 = 0.10%/day for buy side. When the rates
+fall below that your order will no longer be part of the pool)</span></small><br>5) Save the file with File-Save and then File-Exit.</p><span style="color: rgb(102, 0, 0);">
 
 
 
@@ -137,7 +181,10 @@ order. Therefore it can be handy to have a second account or move some
 funds if you still want to do other trades at the same time or don't
 want your entire balance on order. If you want you can have a look at
 the exchange itself at the same time and you will see that your order is automatically
-placed by the bot and adjusted when the exchange rates move.</span><br style="color: black;"><br>For Linux:<br></span><ul><li>In /home/&lt;your username&gt;/nu-pool/linux you will find a couple of bash files. Start the file for the exchange and pair you are providing liquidity for<br>(the output is similar as the Windows output above)<br></li></ul><span style="color: rgb(102, 0, 0);"><br><span style="color: black; font-weight: bold;">Description of the output:</span><br style="color: black;"></span><span style="color: black;"></span><code> balance:</code><span style="color: rgb(102, 0, 0);"><span style="color: black;"> The total amount of unpaid NBT.<br></span><br style="color: black;"></span><span style="color: black;"><code>rate:</code></span><span style="color: rgb(102, 0, 0);"><span style="color: black;">
+placed by the bot and adjusted when the exchange rates move.</span><br style="color: black;"><br>For Linux:<br></span><ul><li>In
+/home/&lt;your username&gt;/nu-pool/linux you will find a couple of
+bash files. Start the file for the exchange and pair you are providing
+liquidity for<br>(the output is similar as the Windows output above)<br></li></ul><span style="color: rgb(102, 0, 0);"><br><span style="color: black; font-weight: bold;">Description of the output:</span><br style="color: black;"></span><span style="color: black;"></span><code> balance:</code><span style="color: rgb(102, 0, 0);"><span style="color: black;"> The total amount of unpaid NBT.<br></span><br style="color: black;"></span><span style="color: black;"><code>rate:</code></span><span style="color: rgb(102, 0, 0);"><span style="color: black;">
 
 Your effective interest rate, which corresponds to the expected daily
 interest rate you will get for the orders currently placed.<br></span><br style="color: black;"></span><span style="color: black;"><code>ppm:</code></span><span style="color: rgb(102, 0, 0);"><span style="color: black;"> Payout per minute. The amount of NBT that were added to your balance over the last minute.<br></span><br style="color: black;"></span><span style="color: black;"><code>efficiency/rejects/missings:</code></span><span style="color: rgb(102, 0, 0);"><span style="color: black;">
@@ -175,10 +222,7 @@ can run two or more .bat files and Plunge (e.g. for Bittrex on nu-pool and ccedk
 on liquidbitsnet) at the same time as long as they are on a different
 exchange. For running two bots on the same exchange at the same time
 but on different pairs (e.g. USD/NBT and EUR/NBT), you will need two
-accounts on the exchange. <br><br></span><br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0); font-weight: bold;"><span style="color: black;">Settings for this custodial grant (10-May-2015)</span>
-
-
-<br style="color: black;"></span><span style="color: rgb(102, 0, 0);"></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br>The settings for this run are set on the server as follows:</span>
+accounts on the exchange. <br><br></span><br style="color: black;"></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0); font-weight: bold;"><span style="color: black;"><a name="Settings_for_this_custodial_grant"></a>Settings for current custodial grant</span><br style="color: black;"></span><span style="color: rgb(102, 0, 0);"></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br>The settings for this run are set on the server as follows:</span>
 
 
 <br style="color: black;"></span><ul style="background-color: rgb(254, 255, 244);"><li><span style="color: rgb(102, 0, 0);">
@@ -193,15 +237,39 @@ accounts on the exchange. <br><br></span><br style="color: black;"></span><div s
 there are mistakes in the quick guide above or the .conf files
 provided. Happy to guide you through. Please be aware I'm in a
 different timezone and not 24/7 available but I will respond eventually.</span><br style="color: black;"><br style="color: black;">
-</span><h4 style="background-color: rgb(254, 255, 244); text-align: center;"><span style="color: rgb(102, 0, 0);"><span style="color: black;">Checking server status</span></span></h4><h4 style="background-color: rgb(254, 255, 244);"><span style="color: rgb(102, 0, 0);"></span></h4><span style="color: rgb(102, 0, 0);"><span style="color: black;">You can check some basic information of the server status here: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/status">http://nbt.liquidbits.net/status</a><span style="color: rgb(204, 153, 51);">.</span></span><br style="color: black;"><span style="color: black;">When users=0 then the server is most likely down. The liquidity is the total of all liquidity provided by the pool members.</span><br><br style="color: black;"><span style="color: black;">You can check the raw json output of existing orders here:</span><br style="color: black;"></span><ul style="background-color: rgb(254, 255, 244);"><li><span style="color: rgb(102, 0, 0);">
+</span><h4 style="background-color: rgb(254, 255, 244); text-align: center;"><a name="Checking_server_status"></a><span style="color: rgb(102, 0, 0);"><span style="color: black;">Checking server status</span></span></h4><h4 style="background-color: rgb(254, 255, 244);"><span style="color: rgb(102, 0, 0);"></span></h4><span style="color: rgb(102, 0, 0);"><span style="color: black;">You can check some basic information of the server status here: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/status">http://nbt.liquidbits.net/status</a><span style="color: rgb(204, 153, 51);">.</span></span><br style="color: black;"><span style="color: black;">When users=0 then the server is most likely down. The liquidity is the total of all liquidity provided by the pool members.</span><br><br style="color: black;"><span style="color: black;">You can check the raw json output of existing orders here:</span><br style="color: black;"></span><ul style="background-color: rgb(254, 255, 244);"><li><span style="color: rgb(102, 0, 0);">
 
 
 
 
 
 
-<span style="color: black;">For CCEDK/USD: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/ccedk/usd">http://nbt.liquidbits.net/info/ccedk/usd</a></span></span></li><li><span style="color: rgb(102, 0, 0);"><span style="color: black;">For CCEDK/EUR: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/ccedk/eur">http://nbt.liquidbits.net/info/ccedk/eur</a></span></span></li><li><span style="color: rgb(102, 0, 0);"><span style="color: black;">For Bitcoin.co.id/BTC: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/bitcoincoid/btc">http://nbt.liquidbits.net/info/bitcoincoid/btc</a></span></span></li></ul><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br></span></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"><a name="FAQ"></a>Frequently Asked Questions</span></span></span><br><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"></span></span></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"><br></span><em style="font-weight: bold;">Why are the NuShareholders providing funds for holding my money on an exchange?</em><br>NuBits are pegged to the US dollar. The way to sustain that is to have adequate funds on many exchanges ensuring that everyone who wants to buy or sell a NuBit can always be offered a dollar or the equivalent of that in e.g. Euro or Bitcoin. The more liquidity is available the more NuBits can be used for larger payments e.g. loans or salaries and by more people at the same time. This will increase the number of transactions and with that more transaction fees can be collected. That will increase the value of the network as a whole and with that likely the NSR share price. <br><br><span style="font-style: italic; font-weight: bold;">Why do I not always get the maximum payout as advertised?</span><br>The pool follows a Dutch auction style method to ensure a fair distribution of the maximum interest available for pay-out. Practicially this means that when the maximum liquidity (see server settings above) is reached the interest for each participant in the pool will decrease. When there is a lot of competition you may consider to set a minimum interest rate (default=~0) in the client. Check the instructions under step 4 on how to do that. When rate goes below the minimum interest rate your funds will be automatically released from the pool (tier 1) to the exchange (tier 2). At that stage you may wish to withdraw your funds from the exchange to your own wallet (tier 3) to mitigiate the risk of exchange default.<br><br></span></span><span style="font-style: italic; font-weight: bold;">Can I receive my interest directly on my NuBits Android wallet?</span><br><span style="color: rgb(102, 0, 0);"><span style="color: black;">Yes, you can. Just provide an address from your NuBits Android wallet when at step 4. When your payouts reach the threshold you will see (and hear) your interest coming in every 24 hours. Just make sure it doesn't keep you from your sleep ;-)<br><br style="font-style: italic;"><span style="font-style: italic; font-weight: bold;">Can I receive my interest in BTC or PPC?</span><br>No, you can only receive your interest in NuBits (NBT). </span></span>You can however use services like Shapeshift.io to convert your NBT instantly.<br><p><strong style="font-style: italic;">Is this legal?</strong><br>The server will be ensured to run as a completely legal operation. 
+<span style="color: black;">For CCEDK/USD: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/ccedk/usd">http://nbt.liquidbits.net/info/ccedk/usd</a></span></span></li><li><span style="color: rgb(102, 0, 0);"><span style="color: black;">For CCEDK/EUR: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/ccedk/eur">http://nbt.liquidbits.net/info/ccedk/eur</a></span></span></li><li><span style="color: rgb(102, 0, 0);"><span style="color: black;">For Bitcoin.co.id/BTC: <a style="color: rgb(204, 153, 51);" href="http://nbt.liquidbits.net/info/bitcoincoid/btc">http://nbt.liquidbits.net/info/bitcoincoid/btc</a></span></span></li></ul><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br></span></span><div style="text-align: center;"><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"><a name="FAQ"></a>Frequently Asked Questions</span></span></span><br><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"></span></span></span></div><span style="color: rgb(102, 0, 0);"><span style="color: black;"><span style="font-weight: bold;"><br></span><em style="font-weight: bold;">Why are the NuShareholders providing funds for holding my money on an exchange?</em><br>NuBits
+are pegged to the US dollar. The way to sustain that is to have
+adequate funds on many exchanges ensuring that everyone who wants to
+buy or sell a NuBit can always be offered a dollar or the equivalent of
+that in e.g. Euro or Bitcoin. The more liquidity is available the more
+NuBits can be used for larger payments e.g. loans or salaries and by
+more people at the same time. This will increase the number of
+transactions and with that more transaction fees can be collected. That
+will increase the value of the network as a whole and with that likely
+the NSR share price. <br><br><span style="font-style: italic; font-weight: bold;">Why do I not always get the maximum payout as advertised?</span><br>The
+pool follows a Dutch auction style method to ensure a fair distribution
+of the maximum interest available for pay-out. Practicially this means
+that when the maximum liquidity (see server settings above) is reached
+the interest for each participant in the pool will decrease. When there
+is a lot of competition you may consider to set a minimum interest rate
+(default=~0) in the client. Check the instructions under step 4 on how
+to do that. When rate goes below the minimum interest rate your funds
+will be automatically released from the pool (tier 1) to the exchange
+(tier 2). At that stage you may wish to withdraw your funds from the
+exchange to your own wallet (tier 3) to mitigiate the risk of exchange
+default.<br><br></span></span><span style="font-style: italic; font-weight: bold;">Can I receive my interest directly on my NuBits Android wallet?</span><br><span style="color: rgb(102, 0, 0);"><span style="color: black;">Yes,
+you can. Just provide an address from your NuBits Android wallet when
+at step 4. When your payouts reach the threshold you will see (and
+hear) your interest coming in every 24 hours. Just make sure it doesn't
+keep you from your sleep ;-)<br><br style="font-style: italic;"><span style="font-style: italic; font-weight: bold;">Can I receive my interest in BTC or PPC?</span><br>No, you can only receive your interest in NuBits (NBT). </span></span>You can however use services like Shapeshift.io to convert your NBT instantly.<br><p><strong style="font-style: italic;">Is this legal?</strong><br>The server will be ensured to run as a completely legal operation. 
 The legal situation regarding participation depends on your home 
 country. It is often considered similar to Bitcoin mining, but this 
 doesn't have to be the case. (We are not able to give any legal advice 
-at all regarding this, so please consult an expert if you are not sure).</p><br><br><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br><span style="font-weight: bold;"></span></span></span></td></tr></tbody></table>
+at all regarding this, so please consult an expert if you are not sure).</p><br><br><span style="color: rgb(102, 0, 0);"><span style="color: black;"><br><span style="font-weight: bold;"></span></span></span></td></tr></tbody></table></body></html>
