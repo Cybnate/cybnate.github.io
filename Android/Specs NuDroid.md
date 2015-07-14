@@ -47,6 +47,7 @@ This due to different address types being incompatible with NuDroid.
 
 **Release notes v2.0**
 The following functionality is included in the v2.0 release:
+
 •	Deterministic wallets (BIP0032) or HD wallets 
 •	New deterministic wallets mean that a wallet can be restored by a single backup.
 •	Encrypt wallet with PIN code, required to send coins (under Safety, select spending PIN)
@@ -55,7 +56,8 @@ The following functionality is included in the v2.0 release:
 •	Bug fixes and performance enhancements
 o	Allows you to send fast Bluetooth payments by default.
 o	New loading screens prevent "Application Not Responding" problems.
-Release notes 1.0
+
+**Release notes 1.0**
 The following functionality is included in the v1.0 Release:
 - Private keys are stored on device and never shared
 - Wallet backups
