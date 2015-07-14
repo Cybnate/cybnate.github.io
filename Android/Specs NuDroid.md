@@ -9,11 +9,9 @@ Release notes
 
 **Release notes NuDroid v3.0:**
 
-•	Shapeshift functionality
-
-•	Store foreign coin addresses in address book
-
-•	Scanning QR codes of other coins including Bitcoin
+o	Shapeshift functionality
+o	Store foreign coin addresses in address book
+o	Scanning QR codes of other coins including Bitcoin
 
 •	Export transactions to comma delimited file (CSV)
 
