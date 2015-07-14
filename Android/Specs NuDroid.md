@@ -17,7 +17,7 @@ Release notes
 -	Bug fix causing crashes or payments not progressing.
 
 
->Bonus functionality:
+Bonus functionality:
 > -	Added an "Export" item in the menu on the main activity (transaction list) which exports the transaction details into a CSV file with the columns: Date, Label, In Amount, Out Amount (inc. fee), Fee, Address, Transaction Hash, Confirmations.
 >-	Improved speed of finding peers.
 >-	Bug fixes (e.g. wallet crashing fixed with Android 5.x and higher)
