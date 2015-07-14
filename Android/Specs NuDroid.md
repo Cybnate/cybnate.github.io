@@ -4,9 +4,11 @@ NuDroid specifications and technology
 Release notes
 -------------
 **Release notes NuDroid v3.1:**
+
 -	Issue with some of the Bitcoin QR codes fixed
 
 **Release notes NuDroid v3.0:**
+
 -	Shapeshift functionality
 -	Store foreign coin addresses in address book
 -	Scanning QR codes of other coins including Bitcoin
@@ -33,14 +35,17 @@ When requesting a non-NuBits payment with Bluetooth enabled, the NuDroid app wil
 4.	BIP0021 URI links
 
 Coin support for Shapeshift functionality as of June 2015:
+
 The NuDroid wallet v3.x supports the following coins:
 Bitcoin, Blackcoin, BitcoinDark, Clams, Counterparty, Dash, Digibyte, Dogecoin, Feathercoin, Gemz, Litecoin, Mastercoin, Mintcoin, Namecoin, Novacoin, Potcoin, Peercoin, Quark, Reddcoin, Shadowcash, Startcoin, Storjcoin X, Swarm, Tether, Unobtanium, Vericoin
 
 Currently not supported are:
+
 Next, BitShares, Monero
 This due to different address types being incompatible with NuDroid.
 
 **Release notes v2.0**
+
 The following functionality is included in the v2.0 release:
 
 -	Deterministic wallets (BIP0032) or HD wallets 
@@ -52,6 +57,7 @@ The following functionality is included in the v2.0 release:
 -	New loading screens prevent "Application Not Responding" problems.
 
 **Release notes 1.0**
+
 The following functionality is included in the v1.0 Release:
 - Private keys are stored on device and never shared
 - Wallet backups
@@ -60,7 +66,8 @@ The following functionality is included in the v1.0 Release:
 - Widget displays balance and allows quick access to app functions
 - Approximated currency conversions
 
-*Shapeshift technology*
+**Shapeshift technology**
+
 NuDroid powered by Shapeshift
 Depending on the liquidity available, coins can be unavailable at Shapeshift.io. New coins supported by Shapeshift.io from today on, won't be supported automatically. This requires an update of the App. 
 
@@ -79,6 +86,7 @@ Other writers should work as well, let us know if you succeed.
 -	If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone could overwrite the tag with his own Nubits address.
 
 **Application Architecture**
+
 Andreas Schildbach architecture
 The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. Here is the list of changes made since:
 https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32. This code may or may not be added in future official versions of NuDroid. However users can create their own unofficial builds if they wish.
@@ -86,6 +94,7 @@ https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32. This code ma
 NuDroid is a standalone NuBits node with no centralized backend required. NuDroid version 3.x has been coded to use the server at svr1.nubitsexplorer.nu. In version 4.x the user will be able to select one through an interface and with that NuDroid can be made completely trustless assuming the user runs their own instance of Abe explorer (svr1.nubitsexplorer.nu).
 
 **Licensing and source code**
+
 GPL version 3
 The NuDroid application is licensed under the GPL version 3. There is no warranty and no party shall be made liable to you for damages. If you lose coins due to this app, no compensation will be given. Use this App and the embedded Shapeshift services solely at your own risk.
 The repository for the ABE explorer lives here: https://github.com/Cybnate/NuBits-Abe-explorer
