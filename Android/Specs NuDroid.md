@@ -2,7 +2,7 @@ NuDroid specifications and technology
 =====================================
 
 Release notes
-
+-------------
 *Release notes NuDroid v3.1:*
 
 •	Issue with some of the Bitcoin QR codes fixed
