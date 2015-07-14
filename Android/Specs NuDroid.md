@@ -66,8 +66,8 @@ The following functionality is included in the v1.0 Release:
 - Widget displays balance and allows quick access to app functions
 - Approximated currency conversions
 
-**Shapeshift technology**
-
+Shapeshift technology
+---------------------
 NuDroid powered by Shapeshift
 Depending on the liquidity available, coins can be unavailable at Shapeshift.io. New coins supported by Shapeshift.io from today on, won't be supported automatically. This requires an update of the App. 
 
@@ -85,7 +85,8 @@ Other writers should work as well, let us know if you succeed.
 -	The type of the message needs to be URI or URL (not Text).
 -	If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone could overwrite the tag with his own Nubits address.
 
-**Application Architecture**
+Application Architecture
+------------------------
 
 Andreas Schildbach architecture
 The current codebase of NuDroid v3.x is based on the Andreas Schildbach Android Bitcoin wallet version 4.13. The Bitcoin wallet is at 4.32 as of June 2015. Here is the list of changes made since:
@@ -93,7 +94,8 @@ https://github.com/schildbach/bitcoin-wallet/compare/v4.13...v4.32. This code ma
 
 NuDroid is a standalone NuBits node with no centralized backend required. NuDroid version 3.x has been coded to use the server at svr1.nubitsexplorer.nu. In version 4.x the user will be able to select one through an interface and with that NuDroid can be made completely trustless assuming the user runs their own instance of Abe explorer (svr1.nubitsexplorer.nu).
 
-**Licensing and source code**
+Licensing and source code
+-------------------------
 
 GPL version 3
 The NuDroid application is licensed under the GPL version 3. There is no warranty and no party shall be made liable to you for damages. If you lose coins due to this app, no compensation will be given. Use this App and the embedded Shapeshift services solely at your own risk.
@@ -102,18 +104,21 @@ The repository for nubitsj lives here: https://github.com/Cybnate/NuBitsj
 And the code for the wallet itself lives here: https://github.com/Cybnate/NuDroid
 Pull request against these repositories will be considered on a case by case bases. Obtaining community support on discuss.nubits.com will greatly improve your chances.
 
-**Wish list**
+Wish list
+---------
 
 The following is a wish list created based on community feedback, developers’ thoughts and logical next steps to further develop the App. There are no guarantees that one or any of the items on this list will be ever implemented in the official build beyond just an intention to continue to build and maintain this App. Please feel free to contribute to the discussion on discuss.nubits.com to have functionality added or deleted from this list and eventually implemented.
 
-Shapeshift related:
+**Shapeshift related:**
+
 -	Adding support to receive Bitcoin and other altcoins via Shapeshift and ability to display foreign QR codes to receive payments
 -	Option to add email address to get receipt of transaction from Shapeshift by email
 -	Provide a return address for each coin in case the transaction couldn't complete
 -	Adding support for BKS exchange assuming they deliver a similar API as Shapeshift
 -	Adding support for NXT, Monero and Bitshares and others Shapeshift has yet to add.
 
-Other:
+**Other:**
+
 -	Synchronising codebase with Bitcoin App
 -	Adding ability to set up recurring fixed payments (e.g. for donations, subscriptions, salaries)
 -	Adding ability to import a series of transactions in a comma delimited file format for immediate payments
