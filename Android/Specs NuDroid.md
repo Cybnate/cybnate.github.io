@@ -7,18 +7,28 @@ Release notes
 
 •	Issue with some of the Bitcoin QR codes fixed
 
-*Release notes NuDroid v3.0:*
+**Release notes NuDroid v3.0:**
+
 •	Shapeshift functionality
+
 •	Store foreign coin addresses in address book
+
 •	Scanning QR codes of other coins including Bitcoin
+
 •	Export transactions to comma delimited file (CSV)
+
 •	Improved peer recognition (faster synchronisation)
+
 •	Bug fix causing crashes or payments not progressing.
 
-Bonus functionality:
-•	Added an "Export" item in the menu on the main activity (transaction list) which exports the transaction details into a CSV file with the columns: Date, Label, In Amount, Out Amount (inc. fee), Fee, Address, Transaction Hash, Confirmations.
-•	Improved speed of finding peers.
-•	Bug fixes (e.g. wallet crashing fixed with Android 5.x and higher)
+
+>Bonus functionality:
+> •	Added an "Export" item in the menu on the main activity (transaction list) which exports the transaction details into a CSV file with the columns: Date, Label, In Amount, Out Amount (inc. fee), Fee, Address, Transaction Hash, Confirmations.
+>
+>•	Improved speed of finding peers.
+>
+>•	Bug fixes (e.g. wallet crashing fixed with Android 5.x and higher)
+
 
 Limitations NuDroid v3.x with Bitcoin and altcoins
 Bluetooth and NFC limitations of the Shapeshift technology:
@@ -35,10 +45,10 @@ Currently not supported are:
 Next, BitShares, Monero
 This due to different address types being incompatible with NuDroid.
 
-*Release notes v2.0*
+**Release notes v2.0**
 The following functionality is included in the v2.0 release:
 •	Deterministic wallets (BIP0032) or HD wallets 
-o	New deterministic wallets mean that a wallet can be restored by a single backup.
+•	New deterministic wallets mean that a wallet can be restored by a single backup.
 •	Encrypt wallet with PIN code, required to send coins (under Safety, select spending PIN)
 •	Displaying local currency in App widget User
 •	Interface improvements 
