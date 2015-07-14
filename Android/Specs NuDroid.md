@@ -4,14 +4,12 @@ NuDroid specifications and technology
 Release notes
 -------------
 **Release notes NuDroid v3.1:**
-
-•	Issue with some of the Bitcoin QR codes fixed
+-	Issue with some of the Bitcoin QR codes fixed
 
 **Release notes NuDroid v3.0:**
-
-o	Shapeshift functionality
-o	Store foreign coin addresses in address book
-o	Scanning QR codes of other coins including Bitcoin
+-	Shapeshift functionality
+-	Store foreign coin addresses in address book
+-	Scanning QR codes of other coins including Bitcoin
 
 •	Export transactions to comma delimited file (CSV)
 
