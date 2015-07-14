@@ -18,7 +18,7 @@ Release notes
 
 
 Bonus functionality:
-____________________
+
 > -	Added an "Export" item in the menu on the main activity (transaction list) which exports the transaction details into a CSV file with the columns: Date, Label, In Amount, Out Amount (inc. fee), Fee, Address, Transaction Hash, Confirmations.
 >-	Improved speed of finding peers.
 >-	Bug fixes (e.g. wallet crashing fixed with Android 5.x and higher)
@@ -50,7 +50,8 @@ This due to different address types being incompatible with NuDroid.
 The following functionality is included in the v2.0 release:
 
 -	Deterministic wallets (BIP0032) or HD wallets 
--	New deterministic wallets mean that a wallet can be restored by a single backup.-•	Encrypt wallet with PIN code, required to send coins (under Safety, select spending PIN)
+-	New deterministic wallets mean that a wallet can be restored by a single backup.
+-	Encrypt wallet with PIN code, required to send coins (under Safety, select spending PIN)
 -	Displaying local currency in App widget User
 -	Interface improvements 
 -	Bug fixes and performance enhancements
@@ -60,6 +61,7 @@ The following functionality is included in the v2.0 release:
 **Release notes 1.0**
 
 The following functionality is included in the v1.0 Release:
+
 - Private keys are stored on device and never shared
 - Wallet backups
 - Fast and secure centralised validation necessary for Proof-of-stake
@@ -69,18 +71,22 @@ The following functionality is included in the v1.0 Release:
 
 Shapeshift technology
 ---------------------
-NuDroid powered by Shapeshift
+**NuDroid powered by Shapeshift**
 Depending on the liquidity available, coins can be unavailable at Shapeshift.io. New coins supported by Shapeshift.io from today on, won't be supported automatically. This requires an update of the App. 
 
 The shapeshift service is delivered by Shapeshift.io. No sign-up is needed but a small fee does apply. More information can be found here: https://shapeshift.zendesk.com/hc/en-us/articles/202585602-What-s-your-fee-structure- On top of that usual miner or network fees also apply depending on the coins used. To date (June 2015) transactions up to 1000 NBT are supported by Shapeshift. There is no guarantee though and it may fluctuate daily. 
+
 NFC (Near field communication) technology support
-Preparing and using tags
+-------------------------------------------------
+**Preparing and using tags**
 The NuDroid wallet supports reading NuBits requests via NFC, either from a passive NFC tag or from another NFC capable Android device that is requesting coins.
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with the "Request coins" dialog open). The "Send coins" dialog will open with fields populated.
 Instructions for preparing an NFC tag with your address:
+
 -	We have successfully tested this NFC tag writer:
 https://play.google.com/store/apps/details?id=com.nxp.nfc.tagwriter
 Other writers should work as well, let us know if you succeed.
+
 -	Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 -	The tag needs to contain a Nubits URI. You can construct one with the "Request coins" dialog, then share with messaging or email. You can also construct the URI manually. Example for Mainnet: nu:BG2Y2jP5YFZ5RGk2PXaeWwbeA5y1ZtFhoL
 -	The type of the message needs to be URI or URL (not Text).
